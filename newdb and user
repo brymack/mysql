@@ -1,0 +1,5 @@
+#create new db, add a user, add permissions on a local instance 
+#log into mysql with a user with the appropriate permissions
+CREATE DATABASE wp_newdbname;
+CREATE USER 'newusername'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON wp_newdbname . * TO 'newusername'@'localhost';
